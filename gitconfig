@@ -1,0 +1,11 @@
+[alias]
+    df = diff -b
+    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an, %cr)%Creset' --abbrev-commit --date=relative
+    who = shortlog -s --
+[push]
+    default = simple
+[user]
+    name = Osni Oliveira
+    email = osni.oliveira@redhat.com
+    signingkey = 3A3A4F66A1479FA9
+
