@@ -17,12 +17,12 @@ export PATH
 
 # User specific aliases and functions
 
-# BASH Git completion
+# BASH git completion
 if [ -f /usr/share/bash-completion/completions/git ]; then
   source /usr/share/bash-completion/completions/git
 fi
 
-# BASH Git Prompt
+# BASH git Prompt
 if [ -f /usr/share/git-core/contrib/completion/git-prompt.sh ]; then
   source /usr/share/git-core/contrib/completion/git-prompt.sh
 fi
@@ -30,3 +30,8 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 export GIT_PS1_SHOWDIRTYSTATE
 export PS1='[\u@\h \W\[\e[1;31m\]$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")\[\e[m\]]\$ '
+
+# NVM configuration
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
