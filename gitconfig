@@ -8,3 +8,5 @@
     name = Osni Oliveira
     email = osni.oliveira@redhat.com
     signingkey = 3A3A4F66A1479FA9
+[pull]
+	ff = only
